@@ -1,0 +1,95 @@
+html {
+    background-image: linear-gradient(#8b9da9, #fff6e4);
+    box-shadow: inset 0 0 100px hsla(0,0%,0%,.3);
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gameboy {
+    background: #bfbdb8;
+    display: inline-block;
+    width: 314px;
+    height: 518px;
+    border-radius: 6px 6px 49px 6px;
+    position: relative;
+    box-shadow:
+      inset -4px -2px 11px 2px hsla(27,4%,46%,0.22),
+      inset 0px -11px 16px -9px hsla(27,4%,46%,0.82),
+      inset 1px 1px 1px hsla(27,4%,46%,0.23),
+      inset 0 18px 10px -5px #D0CCC9;
+}
+  .gameboy:after {
+      content: "";
+      position: absolute;
+      background-color: #4b5d15;
+      padding: 10px;
+      top: 40px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      width: 230px;
+      height: 200px;
+      display: block;
+      border-radius: 6px 6px 37px 6px;
+      box-shadow:
+        inset 0 1px 2px 2px #3e3c48,
+        inset 0 0px 0 35px #53535f,
+        inset 0 0 5px 36px #000,
+        0 0 0 2px #706768,
+        0 0 1px 2px #545663,
+        0 0 50px hsla(0,0%,0%,.3);
+  }
+  .gameboy:before {
+      content: "";
+      position: absolute;
+      bottom: 50px;
+      right: 190px;
+      width: 9px;
+      height: 35px;
+      transform: rotate(60deg);
+      border-radius: 100px;
+      background-color: #6e6d75;
+      z-index: 5;
+      display: inline-block;
+      box-shadow: 23px -35px 0px #6e6d75;
+  }
+
+.controls {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+  .controls:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 320px;
+    left: 60px;
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    background-color: #000;
+    box-shadow:
+      -30px 30px 0 #000,
+      0px 60px 0 #000,
+      30px 30px 0 #000,
+      0px 25px 0 #000,
+      10px 30px 0 #000,
+      -10px 30px 0 #000,
+      0px 30px 0 #000,
+      0px 35px 0 #000;
+  }
+  .controls:after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: 345px;
+    right: 80px;
+    transform: rotate(-30deg);
+    background-color: #a92f60;
+    box-shadow: 50px 0 0 #a92f60;
+  }
